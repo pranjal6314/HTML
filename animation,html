@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .gola{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(245, 235, 178);
+            transition: width 2s ,height 2s,border-radius 4s, background 10s;
+            margin-left: 50%;
+        }
+        .gola:hover{
+                  width: 100px;
+                  height: 100px;
+                  border-radius: 100%;
+                  background: cadetblue;
+        }
+
+        .a{
+            animation: bouncing 0.5s ease 0s infinite alternate both;
+            background:darkblue;
+            border-radius: 50%;
+            display: inline-block;
+            color:cornsilk;
+            cursor: pointer;
+            font-size: 0.75rem;
+            font-weight: 300;
+            letter-spacing: 0.2em;
+            padding: 1em 2em 1em;
+            position: relative;
+            text-decoration: none;
+            text-transform: uppercase;
+            vertical-align: top;
+            margin-top: 100px;
+        }
+         .a:hover{  
+            
+                 border-radius: 50%;
+                  background: cadetblue;}
+            @keyframes bouncing {
+            0%{
+                bottom:0;
+                box-shadow: 0 0 5px  rgba(0,0,0,0.5);
+             }
+
+
+            100%{
+                bottom: 100px;
+                box-shadow:0px 50px 50px rgba(0,0,0,0.1);
+
+            }
+            
+        }
+    
+
+.polling_message {
+  color: rgb(231, 45, 45);
+  float: left;
+  margin-right: 2%;
+}
+
+.view_port {
+  background-color: black;
+  height: 25px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.cylon_eye {
+  background-color: rgb(238, 231, 138);
+  background-image: linear-gradient(to right,
+      rgba(0,0,0,.9) 25%,
+      rgba(0, 0, 0, .1) 50%,
+      rgba(0, 0, 0, .9) 75%);
+  color: white;
+  height: 100%;
+  width: 20%;
+
+  -webkit-animation: 4s linear 0s infinite alternate move_eye;
+          animation: 4s linear 0s infinite alternate move_eye;
+}
+@-webkit-keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }
+        @keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }
+    </style>
+</head>
+<body>
+    <div class="gola">
+
+    </div>
+    <div class="view_port">
+        <div class="polling_message">
+          Hello Sir
+        </div>
+        <div class="cylon_eye"></div>
+      </div>
+      <h1 class="a">loading</h1>
+</body>
+</html>

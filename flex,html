@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challange4</title>
+    <style>
+        .body{
+            background-color: coral;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+            padding: 0px 20px 30px 0px;
+            list-style: 1.4;
+        }
+        .flex-cont{
+            display: flex;
+            width: 100%;
+            height: 500px;
+            border: 2px solid rgb(163, 153, 10);
+            align-content:flex-start;
+             flex-wrap: wrap; 
+
+            
+            
+        }
+        .flex-item{
+            height: 75px;
+            width: 200px;
+            background-color: lightslategrey;
+            border: 2px solid black;
+            text-align: center;
+            font-size: 2em;
+            color: blanchedalmond;
+            font-weight: bold;
+            line-height: 1.4;
+            border-radius: 20px;
+
+        }
+        #flex-item1{
+            display: flex;
+            width: 500px;
+            height: 250px;
+            align-content:center;
+            flex-wrap: wrap; 
+
+        }
+        #flex-item1 nav{
+            height: 40pxpx;
+            width: 100px;
+            background-color: rgb(13, 94, 27);
+            border: 2px solid black;
+            text-align: center;
+            font-size: 1em;
+            color: blanchedalmond;
+            font-weight: bold;
+            line-height: 1.4;
+            border-radius: 20px;
+            
+        }
+        #flex-item2{
+            width: 400px;
+            height: 229px;
+            display: flex;
+            align-content:flex-start;
+            flex-wrap: wrap; 
+
+            
+
+
+        }
+        #flex-item2 nav{
+            margin: 5px;
+            height:100px;
+            width: 180px;
+            background-color: rgb(13, 94, 27);
+            border: 2px solid black;
+            border-radius: 13px;
+            text-align: center;
+            font-size: 1em;
+            color: blanchedalmond;
+
+        }
+        
+        #flex-item4{
+            width: 200px;
+            height: 250px;
+            display: flex;
+            align-content:flex-start;
+            flex-wrap: wrap; 
+
+        }
+        #flex-item4 nav{
+            width: 95px;
+            height: 120px;
+            background-color: rgb(23, 139, 0);
+            border: 2px solid black;
+            border-radius: 13px;
+            text-align: center;
+            font-size: 1em;
+            color: blanchedalmond;
+
+
+        }
+        #flex-item5{
+            width: 200px;
+            height: 170px;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="flex-cont">
+        <div  class="flex-item" id="flex-item1">
+            <nav class="new">1*</nav>
+            <nav class="new">2*</nav>
+            <nav class="new">3*</nav>
+            <nav class="new">4*</nav>
+            <nav class="new">5*</nav>
+            <nav class="new">6*</nav>
+            <nav class="new">7*</nav>
+            <nav class="new">8*</nav>
+            <nav class="new">9*</nav>
+
+
+        </div>
+        <div class="flex-item" id="flex-item2">
+            <nav class="new1">1</nav>
+            <nav class="new1">2</nav>
+            <nav class="new1">3</nav>
+            <nav class="new1">4</nav>
+
+
+        </div>
+        <div class="flex-item" id="flex-item3">3</div>
+        <div class="flex-item" id="flex-item4">
+            <nav class="new2">1</nav>
+            <nav class="new2">2</nav>
+            <nav class="new2">3</nav>
+            <nav class="new2">4</nav>
+        </div>
+        <div class="flex-item" id="flex-item5">5</div>
+    </div>
+</body>
+</html>
